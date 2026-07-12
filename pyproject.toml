@@ -1,0 +1,27 @@
+[project]
+name = "infra-learning"
+version = "0.1.0"
+description = "CUDA / PyTorch / Triton learning workspace"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "scipy",
+    "jupyterlab",
+    "ipykernel",
+    "tqdm",
+    "pybind11",
+    "rich",
+    "torch",
+    "torchvision",
+    "triton",
+]
+
+[tool.uv]
+# Full setup guide: docs/SETUP.md
+# One-shot on a new machine: bash scripts/setup_env.sh
+# torch / torchvision / triton CUDA wheels must use the PyTorch cu124 index:
+#   uv pip install torch torchvision triton \
+#     --index-url https://download.pytorch.org/whl/cu124 \
+#     --index-strategy unsafe-best-match

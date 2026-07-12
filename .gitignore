@@ -1,0 +1,30 @@
+# Build
+build/
+cmake-build-*/
+*.o
+*.out
+*.so
+*.a
+*.exe
+examples/cuda/hello
+
+# Python
+__pycache__/
+*.py[cod]
+.venv
+.venv/
+*.egg-info/
+.ipynb_checkpoints/
+
+# IDE / env
+.env
+.envrc
+.idea/
+.vscode/
+*.swp
+
+# CUDA / ccache
+.ccache/
+*.cubin
+*.ptx
+*.fatbin
